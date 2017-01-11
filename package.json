@@ -1,0 +1,24 @@
+{
+  "name": "vtk-js-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lars Bilke",
+  "license": "ISC",
+  "dependencies": {
+    "vtk.js": "^2.4.8"
+  },
+  "devDependencies": {
+    "kw-web-suite": "^2.2.1"
+},
+  "scripts": {
+    "build": "webpack",
+    "build:release": "export NODE_ENV=production && webpack -p",
+    "start": "webpack-dev-server --content-base ./dist",
+    "commit": "git cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  }
+}
