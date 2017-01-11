@@ -6,6 +6,7 @@ import vtkConeSource      from 'vtk.js/Sources/Filters/Sources/ConeSource';
 import vtkMapper          from 'vtk.js/Sources/Rendering/Core/Mapper';
 import { AttributeTypes } from 'vtk.js/Sources/Common/DataModel/DataSetAttributes/Constants';
 import { FieldDataTypes } from 'vtk.js/Sources/Common/DataModel/DataSet/Constants';
+import vtkHttpDataSetReader       from 'vtk.js/Sources/IO/Core/HttpDataSetReader';
 import controlPanel from './controller.html';
 // ----------------------------------------------------------------------------
 // Standard rendering code setup
@@ -40,6 +41,26 @@ actor.setMapper(mapper);
 renderer.addActor(actor);
 renderer.resetCamera();
 renderWindow.render();
+
+// -------------
+// DataSetReader
+// -------------
+const reader = vtkHttpDataSetReader.newInstance({ fetchGzip: true });
+reader.setUrl(`./data/cow.vtp`).then(() => {
+  reader.loadData().then(() => {
+    //renderer.resetCamera();
+    renderWindow.render();
+  });
+});
+
+const mapperDataSet = vtkMapper.newInstance();
+mapperDataSet.setInputConnection(reader.getOutputPort());
+const actorDataSet = vtkActor.newInstance();
+actorDataSet.setMapper(mapperDataSet);
+renderer.addActor(actorDataSet);
+renderer.resetCamera();
+renderWindow.render();
+
 // -----------------------------------------------------------
 // UI control handling
 // -----------------------------------------------------------
