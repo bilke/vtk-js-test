@@ -1,0 +1,159 @@
+{
+  "CellData": {
+    "MaterialIDs": {
+      "name": "MaterialIDs",
+      "tuple": 1,
+      "dataType": "Int32Array",
+      "vtkClass": "vtkDataArray",
+      "ranges": [
+        {
+          "max": 0.0,
+          "component": null,
+          "min": 0.0
+        }
+      ],
+      "ref": {
+        "encode": "LittleEndian",
+        "basepath": "data",
+        "id": "a75d7d422fd00bf31208b013e74d8394"
+      },
+      "size": 100
+    }
+  },
+  "FieldData": {},
+  "vtkClass": "vtkPolyData",
+  "polys": {
+    "name": "_polys",
+    "tuple": 1,
+    "dataType": "Uint32Array",
+    "vtkClass": "vtkCellArray",
+    "ranges": [
+      {
+        "max": 120.0,
+        "component": null,
+        "min": 0.0
+      }
+    ],
+    "ref": {
+      "encode": "LittleEndian",
+      "basepath": "data",
+      "id": "fd19909a5d598633420d9eda5412bfc7"
+    },
+    "size": 500
+  },
+  "PointData": {
+    "D1_left_bottom_N1_right": {
+      "name": "D1_left_bottom_N1_right",
+      "tuple": 1,
+      "dataType": "Float64Array",
+      "vtkClass": "vtkDataArray",
+      "ranges": [
+        {
+          "max": 1.6753144833236986,
+          "component": null,
+          "min": 1.0
+        }
+      ],
+      "ref": {
+        "encode": "LittleEndian",
+        "basepath": "data",
+        "id": "64b7ba07250e2ab88c8ac398f06f7c41"
+      },
+      "size": 121
+    },
+    "Linear_1_to_minus1": {
+      "name": "Linear_1_to_minus1",
+      "tuple": 1,
+      "dataType": "Float64Array",
+      "vtkClass": "vtkDataArray",
+      "ranges": [
+        {
+          "max": 1.0,
+          "component": null,
+          "min": -1.0
+        }
+      ],
+      "ref": {
+        "encode": "LittleEndian",
+        "basepath": "data",
+        "id": "badac458d73e3f47efbddedf91b608de"
+      },
+      "size": 121
+    },
+    "v_x": {
+      "name": "v_x",
+      "tuple": 1,
+      "dataType": "Float64Array",
+      "vtkClass": "vtkDataArray",
+      "ranges": [
+        {
+          "max": 1.2212453270876722e-15,
+          "component": null,
+          "min": -0.958571217281871
+        }
+      ],
+      "ref": {
+        "encode": "LittleEndian",
+        "basepath": "data",
+        "id": "4bd584f547c8240ec43e267a4509f7e8"
+      },
+      "size": 121
+    },
+    "pressure": {
+      "name": "pressure",
+      "tuple": 1,
+      "dataType": "Float64Array",
+      "vtkClass": "vtkDataArray",
+      "ranges": [
+        {
+          "max": 1.6757297523776378,
+          "component": null,
+          "min": 1.0
+        }
+      ],
+      "ref": {
+        "encode": "LittleEndian",
+        "basepath": "data",
+        "id": "70f1c375443fdbab603173ed5495b99a"
+      },
+      "size": 121
+    }
+  },
+  "points": {
+    "name": "Points",
+    "tuple": 3,
+    "dataType": "Float64Array",
+    "vtkClass": "vtkPoints",
+    "ranges": [
+      {
+        "max": 1.0,
+        "component": null,
+        "min": 0.0
+      },
+      {
+        "max": 1.0,
+        "component": null,
+        "min": 0.0
+      },
+      {
+        "max": 0.0,
+        "component": null,
+        "min": 0.0
+      },
+      {
+        "max": 1.4142135623730951,
+        "component": null,
+        "min": 0.0
+      }
+    ],
+    "ref": {
+      "encode": "LittleEndian",
+      "basepath": "data",
+      "id": "32e8f28eed45ca08f8c06a8001c6b3ba"
+    },
+    "size": 363
+  },
+  "metadata": {
+    "name": "square_1e2_neumann_pcs_0_ts_1_t_1.000000.vtu"
+  }
+}
